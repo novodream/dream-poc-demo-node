@@ -1,0 +1,8 @@
+/node_modules
+/.dream
+/.dreamrc.yml
+/.dreamenv.yml
+
+/.idea
+
+/package-lock.json
