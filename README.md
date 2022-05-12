@@ -1,26 +1,76 @@
 # Dream Demo Node
 
-Simple nodejs express application using dream to manage external resources.
+Simple nodejs express application using [DReAM](https://github.com/novopattern/dream-cli-poc.git) to manage external resources.
 
-It exposes crud endpoints to read and edits a mongodb collection.
+It exposes crud endpoints to read and edit a mongodb collection.
 For demonstration purpose, mongodb will be provided and autoconfigured by dream.
+
+## What is DReAM
+DReAM or Developer Resources Auto-configuration Manager is an experimental tool 
+that manages external resources you use in your app like databases. 
+For example, you can add a database like mongo in your project just by running: `dream add mongo` 
+and dream will deploy an instance of mongodb, inject the necessary environment variables and install 
+necessary client libraries preconfigured to connect to the previously deployed database  without you having 
+to manage a single connection string. 
+You can just start inserting and reading data. 
+
+For now, dream is experimental and work only for mongo as a proof of concept. 
+DReAM is designed to work with any language, but for now, it only works with nodejs and go.
 
 ## Getting started
 
 * Install [terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 * Install and start docker. You may use [docker-desktop](https://docs.docker.com/get-docker/)
 * Install [nodejs](https://nodejs.org/en/download/).
-* Clone the repository: `git clone https://github.com/novopattern/dream-poc-demo-node.git`
-* In your terminal: `cd dream-poc-demo-node`
-* Install project's dependencies: `npm install`
-* Start the sample application and watch for changes: `npm run dev`
-* Test the root endpoint in another terminal tab or window: `curl localhost:3000/`
+* Clone the repository:
+
+```shell
+git clone https://github.com/novopattern/dream-poc-demo-node.git 
+```
+
+* In your terminal:
+
+```shell
+cd dream-poc-demo-node
+```
+
+* Install project's dependencies:
+
+```shell
+npm install
+```
+
+* Start the sample application and watch for changes:
+
+```shell
+npm run dev
+```
+
+* Test the root endpoint in another terminal tab or window:
+
+```shell
+curl localhost:3000/
+```
 
 ## Adding mongodb with dream
 
-* Install dream: `npm install -g @novopattern/dream-poc`
-* Run in the root directory of the project: `dream init -p npm`
-* Now run the following command: `dream add mongo`
+* Install dream:
+
+```shell
+npm install -g @novopattern/dream-poc
+```
+
+* Run in the root directory of the project:
+
+```shell
+dream init -p npm
+```
+
+* Now run the following command:
+
+```shell
+dream add mongo
+```
 
 ## Adding CRUD routes
 
