@@ -7,9 +7,9 @@ For demonstration purpose, mongodb will be provided and autoconfigured by dream.
 
 ## Getting started
 
-* Install [terraform]()
-* Install and start docker. You may use [docker-desktop]()
-* Install [nodejs]().
+* Install [terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
+* Install and start docker. You may use [docker-desktop](https://docs.docker.com/get-docker/)
+* Install [nodejs](https://nodejs.org/en/download/).
 * Clone the repository: `git clone https://github.com/novopattern/dream-poc-demo-node.git`
 * In your terminal: `cd dream-poc-demo-node`
 * Install project's dependencies: `npm install`
