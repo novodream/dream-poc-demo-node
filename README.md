@@ -1,6 +1,6 @@
 # DReAM Demo Node
 
-Simple nodejs express application using [DReAM](https://github.com/novopattern/dream-cli-poc.git) to manage external resources.
+Simple nodejs express application using [DReAM](https://www.npmjs.com/package/@novopattern/dream-poc) to manage external resources.
 
 It exposes crud endpoints to read and edit a mongodb collection.
 For demonstration purpose, mongodb will be provided and autoconfigured by dream.
