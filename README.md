@@ -18,7 +18,7 @@ For demonstration purpose, mongodb will be provided and autoconfigured by dream.
 
 ## Adding mongodb with dream
 
-* Install dream: `npm install -g @novopattern/dream`
+* Install dream: `npm install -g @novopattern/dream-poc`
 * Run in the root directory of the project: `dream init -p npm`
 * Now run the following command: `dream add mongo`
 
