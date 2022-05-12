@@ -17,11 +17,12 @@ You can just start inserting and reading data.
 For now, dream is experimental and work only for mongo as a proof of concept. 
 DReAM is designed to work with any language, but for now, it only works with nodejs and go.
 
-## Getting started
-
+## Prerequisites
 * Install [terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 * Install and start docker. You may use [docker-desktop](https://docs.docker.com/get-docker/)
 * Install [nodejs](https://nodejs.org/en/download/).
+
+## Getting started
 * Clone the repository:
 
 ```shell
@@ -126,12 +127,28 @@ Make sure your app is running with `npm run dev`.
 In another terminal window, test the endpoints with curl. You may use other request tools like postman. In this
 tutorial, we will cover curl.
 
-* List movies: `curl localhost:3000/movies`
-* Add a
-  movie: `curl -X POST -H "Content-Type: application/json" localhost:3000/movies -d '{"title": "Back to the future", "year": 1985}'`
-* Get a movie: `curl localhost:3000/movies/:id`
-* Delete a movie: `curl -X DELETE localhost:3000/movies/:id`
+* List movies: 
+```shell
+curl localhost:3000/movies
+```
+* Add a movie: 
+```shell
+curl -X POST -H "Content-Type: application/json" \ 
+localhost:3000/movies \
+-d '{"title": "Back to the future", "year": 1985}'
+```
+* Get a movie: 
+```shell
+curl localhost:3000/movies/:id
+```
+* Delete a movie: 
+```shell
+curl -X DELETE localhost:3000/movies/:id
+```
 
 ## Removing mongo
 
-To remove mongo from the app, first, remove any code using mongo and run: `dream remove mongo`.
+To remove mongo from the app, first, remove any code using mongo and run: 
+```shell
+dream remove mongo
+```
