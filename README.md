@@ -1,4 +1,4 @@
-# Dream Demo Node
+# DReAM Demo Node
 
 Simple nodejs express application using [DReAM](https://github.com/novopattern/dream-cli-poc.git) to manage external resources.
 
