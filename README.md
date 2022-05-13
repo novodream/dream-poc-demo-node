@@ -132,7 +132,7 @@ curl localhost:3000/movies
 ```
 * Add a movie: 
 ```shell
-curl -X POST -H "Content-Type: application/json" \ 
+curl -X POST -H "Content-Type: application/json" \
 localhost:3000/movies \
 -d '{"title": "Back to the future", "year": 1985}'
 ```
