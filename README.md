@@ -18,7 +18,6 @@ For now, dream is experimental and work only for mongo as a proof of concept.
 DReAM is designed to work with any language, but for now, it only works with nodejs and go.
 
 ## Prerequisites
-* Install [terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 * Install and start docker. You may use [docker-desktop](https://docs.docker.com/get-docker/)
 * Install [nodejs](https://nodejs.org/en/download/).
 
