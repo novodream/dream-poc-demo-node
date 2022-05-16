@@ -25,7 +25,7 @@ DReAM is designed to work with any language, but for now, it only works with nod
 * Clone the repository:
 
 ```shell
-git clone https://github.com/novopattern/dream-poc-demo-node.git 
+git clone https://github.com/novodream/dream-poc-demo-node.git 
 ```
 
 * In your terminal:
@@ -57,7 +57,7 @@ curl localhost:3000/
 * Install dream:
 
 ```shell
-npm install -g @novopattern/dream-poc
+npm install -g @novodream/cli-poc
 ```
 
 * Run in the root directory of the project:
@@ -77,7 +77,7 @@ dream add mongo
 In `index.mjs` file, add the following imports:
 
 ```js
-import {connect} from '@novopattern/dream-mongo-poc'
+import {connect} from '@novodream/dream-mongo-poc'
 ```
 
 Then replace
