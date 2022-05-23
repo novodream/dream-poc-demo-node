@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.mjs",
   "scripts": {
-    "dev": "dream run nodemon"
+    "dev": "nodemon --exec \"dream run node index.mjs\""
   },
   "keywords": [],
   "author": "",

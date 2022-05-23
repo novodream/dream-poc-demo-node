@@ -44,6 +44,18 @@ cd dream-poc-demo-node
 npm install
 ```
 
+* Install dream:
+
+```shell
+npm install -g @novodream/cli-poc
+```
+
+* Run in the root directory of the project:
+
+```shell
+dream init
+```
+
 * Start the sample application and watch for changes:
 
 ```shell
@@ -58,34 +70,23 @@ curl localhost:3000/
 
 ## Adding mongodb with dream
 
-* Install dream:
+Keep the terminal tab or window running `npm run dev` and in another one,
 
-```shell
-npm install -g @novodream/cli-poc
-```
-
-* Run in the root directory of the project:
-
-```shell
-dream init
-```
-
-* Now run the following command:
+* run the following command:
 
 ```shell
 dream add mongo
-```
-
-* Restart the app to take into account the new resource
-
-```shell
-npm run dev
 ```
 
 ## Adding CRUD routes
 
 To connect to mongo, we are going to use [mongoose](https://mongoosejs.com), but you can use any mongo client you want,
 but if you do, you will have to update the following instructions accordingly.
+
+To install [mongoose](https://mongoosejs.com), run 
+```shell
+npm install mongoose
+```
 
 By running the app with `dream run <cmd>` via the script `npm run dev`,
 dream has injected environment variables exported by the mongo package previously added.
@@ -117,7 +118,7 @@ mongoose.connect(process.env.MONGO_URL).then(() => {
 
 This will ensure the connection to mongodb before the server starts up.
 
-Crud endpoints are implemented in `movies.mjs` module. Add the following import in `index.mjs`file:
+CRUD endpoints are implemented in `movies.mjs` module. Add the following import in `index.mjs`file:
 
 ```js
 import {moviesRouter} from "./movies.mjs"
