@@ -11,13 +11,12 @@ For demonstration purpose, mongodb will be provided and autoconfigured by dream.
 DReAM or Developer Resources Auto-configuration Manager is an experimental tool
 that manages external resources you use in your app like databases.
 For example, you can add a database like mongo in your project just by running: `dream add mongo`
-and dream will deploy an instance of mongodb, inject the necessary environment variables and install
-necessary client libraries preconfigured to connect to the previously deployed database without you having
+and dream will deploy an instance of mongodb, inject the necessary environment variables without you having
 to manage a single connection string.
 You can just start inserting and reading data.
 
 For now, dream is experimental and work only for mongo as a proof of concept.
-DReAM is designed to work with any language, but for now, it only works with nodejs and go.
+DReAM is designed to work with any language.
 
 ## Prerequisites
 
